@@ -1,0 +1,1 @@
+/home/william/.duckdb/cli/1.5.4/duckdb md:data_jobs_bonus
