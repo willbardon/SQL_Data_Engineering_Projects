@@ -1,1 +1,1 @@
-SELECT skills FROM skills_dim
+SELECT DISTINCT skills FROM skills_dim
