@@ -1,1 +1,1 @@
-SELECT * FROM skills_dim
+SELECT skills FROM skills_dim
