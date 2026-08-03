@@ -13,7 +13,7 @@ If you only have a minute, review these:
 
 1. [01_top_demanded_skills.sql](../1_EDA/01_top_demanded_skills.sql) – demand analysis with multi-table joins
 2. [02_top_paying_skills.sql](../1_EDA/02_top_paying_skills.sql) – salary analysis with aggregations
-3. [03_optimal_skills.sql](1_EDA/03_optimals_skills.sql../) – combined demand/salary optimization query
+3. [03_optimal_skills.sql](../1_EDA/03_optimals_skills.sql) – combined demand/salary optimization query
 ## 🧩 Problem & Context
 Job market analysts need to answer questions like:
 
@@ -52,8 +52,8 @@ The source data is postings on major job platforms from January 2023 on. The dat
 ## 🏗 Analysis Overview
 Query Structure
 1. **[Top Demanded Skills](../1_EDA/01_top_demanded_skills.sql)** – Identifies the 10 most in-demand skills for remote data engineer positions
-2. **[Top Paying Skills](1_EDA/01_top_demanded_skills.sql)** – Analyzes the 25 highest-paying skills with salary and demand metrics
-3. **[Optimal Skills](../1_EDA/03_optimals_skills.sql)** – Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn
+2. **[Top Paying Skills](../1_EDA/02_top_paying_skills.sql)** – Analyzes the 25 highest-paying skills with salary and demand metrics
+3. **[Optimal Skills](../1_EDA/03_optimal_skills.sql)** – Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn
 
 ### Key Insights
 - 🧠 Core languages: SQL and Python each appear in ~29,000 job postings, making them the most demanded skills
