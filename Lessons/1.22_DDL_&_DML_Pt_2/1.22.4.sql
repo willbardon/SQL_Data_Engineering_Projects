@@ -1,0 +1,15 @@
+CREATE VIEW cloud_engineering_roles_view AS
+    SELECT
+        jpf.job_title,
+        cd.name AS company_name,
+        sd.skills AS skill_name
+    FROM data_jobs.job_postings_fact AS jpf INNER JOIN
+        data_jobs.company_dim AS cd ON jpf.company_id = cd.company_id INNER JOIN 
+        data_jobs.skills_job_dim AS sjd ON sjd.job_id = jpf.job_id INNER JOIN
+        data_jobs.skills_dim AS sd ON sd.skill_id = sjd.skill_id
+    WHERE
+        job_title_short = 'Data Engineer' AND
+        skills IN ('aws', 'gcp');
+
+        
+SELECT * FROM cloud_engineering_roles_view LIMIT 10;
